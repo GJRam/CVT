@@ -16,7 +16,6 @@ class ColourGame:
         self.correct_answers = 0
         self.tries = 0
 
-
     def __get_colour_of_square(self,coordinate):
         if (ord(coordinate[0]))%2 == int(coordinate[1]) % 2 :
             return "b"
@@ -32,11 +31,6 @@ class ColourGame:
             return True
         else:
             print("You Suck!")
-
-        
-
-
-
 
 if __name__ == "__main__":
     game_end = time.monotonic() + 60     
